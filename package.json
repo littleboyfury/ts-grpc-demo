@@ -2,11 +2,6 @@
   "name": "ts-grpc-demo",
   "version": "1.0.0",
   "description": "typescript grpc demo",
-  "private": true,
-  "egg": {
-    "typescript": true,
-    "declarations": true
-  },
   "scripts": {
     "serverGT": "ts-node src/with_google_timestamp/server.ts",
     "clientGT": "ts-node src/with_google_timestamp/client.ts",
@@ -40,16 +35,7 @@
   },
   "repository": {
     "type": "git",
-    "url": ""
-  },
-  "eslintIgnore": [
-    "coverage"
-  ],
-  "nyc": {
-    "reporter": [
-      "cobertura",
-      "lcov"
-    ]
+    "url": "git+https://github.com/littleboyfury/ts-grpc-demo.git"
   },
   "author": "skyfury",
   "license": "MIT"
