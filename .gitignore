@@ -14,8 +14,7 @@ yarn-error.log
 !.autod.conf.js
 appveyor.yml
 .travis.yml
-
-app/**/*.js
+!src/with_google_timestamp/lib/converter.js
 test/**/*.js
 config/**/*.js
 app/**/*.map

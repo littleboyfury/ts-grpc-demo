@@ -5,6 +5,8 @@ function SayHello(call, callback) {
   console.log(call.request, 'call')
   callback(null, {
     message: 'hhh',
+
+    // google.protobuf.Timestamp 类型可以直接通过 new Date() 进行赋值
     updated_time: new Date(),
     time3: new Date(),
     a: {
