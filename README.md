@@ -7,8 +7,6 @@
   <h1>Typescript GRPC Demo</h1>
 </div>
 
-# Typescript GRPC Demo
-
 ## install
 
 ```bash
@@ -43,15 +41,17 @@ npm run clean
 
 ## 示例
 
-[使用 Timestamp 类型](src/normal)
-`npm run server`
+- [使用 Timestamp 类型](src/normal)  
+`npm run server`  
 `npm run client`
-[使用 使用生成的 types](src/useTypes)
-`npm run proto && npm run timestampToDate`
-`npm run serverType`
+
+- [使用 使用生成的 types](src/useTypes)  
+`npm run proto && npm run timestampToDate`  
+`npm run serverType`  
 `npm run clientType`
-[使用 Date 类型](src/with_google_timestamp)
-`npm run serverGT`
+
+- [使用 Date 类型](src/with_google_timestamp)  
+`npm run serverGT`  
 `npm run clientGT`
 
 
