@@ -4,9 +4,12 @@
 [![Typescript](https://img.shields.io/badge/Typescript-4.0.0-green.svg)](https://www.typescriptlang.org/)
 [![Ecmascript](https://img.shields.io/badge/Ecmascript-2020+-green.svg)](https://www.ecma-international.org/publications-and-standards/standards/ecma-262/)
 
-  <h1>Typescript GRPC demo</h1>
+  <h1>Typescript GRPC Demo</h1>
 </div>
 
+# Typescript GRPC Demo
+
+## install
 
 ```bash
 npm install
@@ -27,7 +30,7 @@ npm run timestampToDate
 npm run clean
 ```
 
-# 修改说明
+## 修改说明
 
 1. 根据 [protobufjs PR](https://github.com/protobufjs/protobuf.js/pull/1076) 
 把修改后的 [converter.js](src/with_google_timestamp/lib/converter.js)
@@ -38,5 +41,17 @@ npm run clean
 2. 类型文件生成，`npm run proto && npm run timestampToDate` 生成类型文件，
 通过 sed 替换掉 原有的 Timestamp 类型
 
+## 示例
+
+[使用 Timestamp 类型](src/normal)
+`npm run server`
+`npm run client`
+[使用 使用生成的 types](src/useTypes)
+`npm run proto && npm run timestampToDate`
+`npm run serverType`
+`npm run clientType`
+[使用 Date 类型](src/with_google_timestamp)
+`npm run serverGT`
+`npm run clientGT`
 
 
