@@ -39,6 +39,8 @@ npm run clean
 2. 类型文件生成，`npm run proto && npm run timestampToDate` 生成类型文件，
 通过 sed 替换掉 原有的 Timestamp 类型
 
+3. 修改原因，社区中没有针对 google 的包做处理，如果独立维护 protobufjs 是有成本的，间接性修改源码，以减少维护成本
+
 ## 示例
 
 - [使用 Timestamp 类型](src/normal)  
