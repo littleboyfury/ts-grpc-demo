@@ -25,4 +25,4 @@ config/config.unittest.ts
 package-lock.json
 .nyc_output/
 .idea
-
+types

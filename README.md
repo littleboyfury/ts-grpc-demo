@@ -18,14 +18,25 @@ npm run clientGT
 # 使用对象类型 { seconds: 199999, nanos: 100000 }
 npm run server
 npm run client
+
+# 生成类型文件
+npm run proto
+# 替换 Timestamp 为 Date
+npm run timestampToDate
+# 删除 类型文件
+npm run clean
 ```
 
 # 修改说明
 
-根据 [protobufjs PR](https://github.com/protobufjs/protobuf.js/pull/1076) 
+1. 根据 [protobufjs PR](https://github.com/protobufjs/protobuf.js/pull/1076) 
 把修改后的 [converter.js](src/with_google_timestamp/lib/converter.js)
 复制到自己的项目中，在 [proto.ts](src/with_google_timestamp/proto.ts)
 中进行导入原有的包进行覆盖，使用 `import()` 函数对 `@grpc/proto-loader` 包进行延迟导入，
 这样 `converter` 就是被自定义的函数。
+
+2. 类型文件生成，`npm run proto && npm run timestampToDate` 生成类型文件，
+通过 sed 替换掉 原有的 Timestamp 类型
+
 
 

@@ -6,7 +6,10 @@
     "serverGT": "ts-node src/with_google_timestamp/server.ts",
     "clientGT": "ts-node src/with_google_timestamp/client.ts",
     "server": "ts-node src/normal/server.ts",
-    "client": "ts-node src/normal/client.ts"
+    "client": "ts-node src/normal/client.ts",
+    "proto": "cd proto && npx proto-loader-gen-types --keepCase --includeComments --includeDirs . --longs=String --enums=String --defaults --oneofs --grpcLib=@grpc/grpc-js --outDir=../types/ `find . -name '*.proto'` ",
+    "timestampToDate": "ts-node bin/timstampToData.ts",
+    "clean": "rm -rf types"
   },
   "dependencies": {
     "@grpc/grpc-js": "^1.5.3",
